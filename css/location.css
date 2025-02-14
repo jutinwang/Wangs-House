@@ -1,0 +1,136 @@
+/* Background Image */
+body {
+    background-image: url("../images/location.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: #FFEA00;
+    font-family: "Inknut Antiqua";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding: 0;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+li a.active {
+    color: #FFEA00;
+    font-weight: bold;
+}
+
+.reservation-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.reservation-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Layout Container */
+.locationContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    padding: 0 10%;
+}
+
+/* Location Card (Black Box) */
+.locationCard {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border: 2px solid #FFEA00;
+    width: 450px;
+    text-align: center;
+    position: relative;
+}
+
+/* Yellow Corner Boxes */
+.corner {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #FFEA00;
+    position: absolute;
+}
+
+.top-left { top: -5px; left: -5px; border-right: none; border-bottom: none; }
+.top-right { top: -5px; right: -5px; border-left: none; border-bottom: none; }
+.bottom-left { bottom: -5px; left: -5px; border-right: none; border-top: none; }
+.bottom-right { bottom: -5px; right: -5px; border-left: none; border-top: none; }
+
+/* Title */
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Address */
+.address {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Opening Hours */
+.hours-section {
+    text-align: left;
+}
+
+.hours-header {
+    display: inline-block;
+    background-color: black;
+    border: 2px solid #FFEA00;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table td {
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.hours-table td:first-child {
+    font-weight: bold;
+}
+
+/* Google Maps Placeholder */
+.map-placeholder {
+    width: 450px;
+    height: 300px;
+    background-color: #826C60;
+}

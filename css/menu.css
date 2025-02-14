@@ -1,51 +1,55 @@
 body {
     background-image: url("../images/menu.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+/* Header Styling */
 .header {
-    display: flex;        /* Enables flexbox */
-    /* justify-content: space-between;  */
-    padding: 10px 20px;   /* Adds spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .logo {
-    flex-shrink: 0;
     color: #FFEA00;
     font-family: "Inknut Antiqua";
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 ul {
-    display: table;
-    margin: 0;
+    display: flex;
+    gap: 100px;
+    list-style: none;
     padding: 0;
-    width: 75%; /* Sets how big the nav bar stretches */
-  }
-
-li {
-    display: table-cell;
-    padding: 5px 0; /* Sets the padding from the top */
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    width: 20%;
-}
-  
-a {
-    display: inline-block;
-    padding: 8px;
-    color: white !important;
 }
 
-a:link {
-    text-decoration:none;
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-a:active {
-    color: blue !important;
+li a.active {
+    color: #FFEA00;
+    font-weight: bold;
+}
+
+.reservation-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.reservation-btn:hover {
+    background-color: white;
+    color: black;
 }
 
 .menuBody {

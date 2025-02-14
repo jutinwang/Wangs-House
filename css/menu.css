@@ -1,0 +1,117 @@
+body {
+    background-image: url("../images/menu.jpg.webp");
+}
+
+.header {
+    display: flex;        /* Enables flexbox */
+    /* justify-content: space-between;  */
+    padding: 10px 20px;   /* Adds spacing */
+}
+
+.logo {
+    flex-shrink: 0;
+    color: #FFEA00;
+    font-family: "Inknut Antiqua";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 75%; /* Sets how big the nav bar stretches */
+  }
+
+li {
+    display: table-cell;
+    padding: 5px 0; /* Sets the padding from the top */
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 20%;
+}
+  
+a {
+    display: inline-block;
+    padding: 8px;
+    color: white !important;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+a:active {
+    color: blue !important;
+}
+
+.menuBody {
+    width: 900px;
+    height: auto;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.menuContainer {
+    text-align: center;
+    color: white;
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.mealTime {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #FFEA00;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.mealTime img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.mealTime h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.mealTime p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+.menuItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.menuItem {
+    background-color: black;
+    border: 2px solid #FFEA00;
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    width: 380px;
+}

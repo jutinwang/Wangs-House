@@ -1,0 +1,114 @@
+body {
+    background-image: url("../images/aboutus.jpg");
+}
+
+.header {
+    display: flex;        /* Enables flexbox */
+    /* justify-content: space-between;  */
+    padding: 10px 20px;   /* Adds spacing */
+}
+
+.logo {
+    flex-shrink: 0;
+    color: #FFEA00;
+    font-family: "Inknut Antiqua";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 75%; /* Sets how big the nav bar stretches */
+  }
+
+li {
+    display: table-cell;
+    padding: 5px 0; /* Sets the padding from the top */
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 20%;
+}
+  
+a {
+    display: inline-block;
+    padding: 8px;
+    color: white !important;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+a:active {
+    color: blue !important;
+}
+
+.infoBoxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Adjusts space between the two boxes */
+    height: 80vh; /* Makes sure they are centered in full viewport height */
+}
+
+.meetChef {
+    position: relative;
+    width: 534px;
+    height: 663px;
+    flex-shrink: 0;
+    background-color: #483b3b;
+}
+
+.reviews {
+    position: relative;
+    width: 534px;
+    height: 663px;
+    flex-shrink: 0;
+    background-color: red;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: "Inknut Antique";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 66px;
+}
+
+.dot {
+    height: 125px;
+    width: 125px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+.chefDesc {
+    text-align: center;
+    color: white;
+}
+
+.dot-left {
+    height: 125px;
+    width: 125px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+  }
+
+.dot-right {
+    height: 125px;
+    width: 125px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+  }
+

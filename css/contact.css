@@ -72,7 +72,6 @@ li a.active {
     border: 2px solid #FFEA00;
 }
 
-/* Title and Email Section with Yellow Lines */
 .title-wrapper {
     display: flex;
     align-items: center;

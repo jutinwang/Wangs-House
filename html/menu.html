@@ -33,17 +33,22 @@
 
     <div class="menuBody">
         <div class="menuContainer">
+          <div class="title-wrapper">
+            <div class="line"></div>
+            <h4 class="menuTitle">The Menu</h4>
+            <div class="line"></div>
+          </div>
             <div class="menuSection">
                 <div class="menuHeader">
                     <!-- Use the onclick attribute to call switchMenu directly -->
-                    <button class="mealTime" id="lunchM" onclick="switchMenu('lunch')">
+                    <button id="lunchM" class="mealTime" onclick="switchMenu('lunch')">
                         <img src="../images/restaurant.png" alt="Lunch Icon">
                         <div class="clickable">
                             <h3>Lunch</h3>
                             <p>11:30 am - 4:30 pm</p>
                         </div>
                     </button>
-                    <button class="mealTime" id="dinnerM" onclick="switchMenu('dinner')">
+                    <button id="dinnerM" class="mealTime" onclick="switchMenu('dinner')">
                         <img src="../images/menu.png" alt="Dinner Icon">
                         <div class="clickable">
                             <h3>Dinner</h3>
@@ -82,14 +87,20 @@
     <script>
       function switchMenu(menuType) {
         const lunchMenu = document.getElementById('lunchMenu');
+        const lunchButton = document.getElementById('lunchM');
         const dinnerMenu = document.getElementById('dinnerMenu');
+        const dinnerButton = document.getElementById('dinnerM')
 
         if (menuType === 'lunch') {
           lunchMenu.style.display = 'grid';
+          lunchButton.style.borderColor = '#FFEA00';
           dinnerMenu.style.display = 'none';
+          dinnerButton.style.borderColor = 'white';
         } else if (menuType === 'dinner') {
           dinnerMenu.style.display = 'grid';
+          dinnerButton.style.borderColor = '#FFEA00';
           lunchMenu.style.display = 'none';
+          lunchButton.style.borderColor = 'white';
         }
       }
     </script>

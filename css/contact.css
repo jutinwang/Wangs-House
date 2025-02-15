@@ -1,4 +1,5 @@
-/* Background Image */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
 body {
     background-image: url("../images/contact.webp");
     background-size: cover;
@@ -54,10 +55,17 @@ body {
     background-color: #FFEA00;
 }
 
+.line2 {
+    width: 130px;
+    height: 2px;
+    background-color: #FFEA00;
+}
+
 /* Title */
 .title {
     font-size: 32px;
     font-weight: bold;
+    font-family: "Inknut Antiqua";
 }
 
 /* Phone */
@@ -74,6 +82,7 @@ body {
 .subtitle {
     font-size: 20px;
     font-weight: bold;
+    font-family: "Inknut Antiqua";
 }
 
 /* Form */
@@ -123,6 +132,7 @@ body {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    font-family: "Inknut Antiqua";
 }
 
 .submitBtn:hover {

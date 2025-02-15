@@ -49,17 +49,20 @@ body {
 .reservationTitle {
     font-size: 28px;
     font-weight: bold;
+    font-family: "Inknut Antiqua";
 }
 
 .reservationSubtitle {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: "Inknut Antiqua";
 }
 
 .reservationText {
     font-size: 18px;
     margin-bottom: 10px;
+    font-family: "Inknut Antiqua";
 }
 
 /* Form */
@@ -97,6 +100,7 @@ body {
     border: 2px solid #FFEA00;
     cursor: pointer;
     margin-top: 10px;
+    font-family: "Inknut Antiqua";
 }
 
 .reserveBtn:hover {

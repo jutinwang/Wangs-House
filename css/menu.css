@@ -51,7 +51,7 @@ body {
     align-items: center;
     background-color: white;
     padding: 10px;
-    border: 2px solid #FFEA00;
+    border: 2px solid white;
     border-radius: 5px;
     width: 250px;
 }
@@ -88,4 +88,23 @@ body {
     text-align: left;
     color: white;
     width: 380px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.menuTitle {
+    font-family: "Inknut Antiqua";
+    color: white;
+}
+
+.line {
+    width: 300px;
+    height: 2px;
+    background-color: #FFEA00;
 }

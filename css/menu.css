@@ -56,6 +56,10 @@ body {
     width: 250px;
 }
 
+.mealTime:hover {
+    background-color: #FFEA00;
+}
+
 .mealTime img {
     width: 30px;
     margin-right: 10px;

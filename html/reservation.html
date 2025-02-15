@@ -10,17 +10,26 @@
   </head>
   
   <body>
-    <div class="header">
-      <h1 class="logo">Wang's</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="menu.html">The Menu</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-      <button class="reservation-btn">Make Reservation</button>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent w-100 fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-warning fw-bold fs-2" href="index.html">Wang's</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">The Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <a href="reservation.html" class="btn btn-outline-warning text-white">Make Reservation</a>
+      </div>
+    </nav>
 
     <div class="reservationContainer">
       <div class="reservationBox">
@@ -45,5 +54,45 @@
         </form>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const form = document.querySelector(".reservationForm");
+          const container = document.querySelector(".reservationContainer");
+
+          form.addEventListener("submit", function (event) {
+              event.preventDefault();
+
+              // Collecting form values
+              const name = form.querySelector("input[placeholder='Name']").value || "Name";
+              const person = form.querySelector("input[placeholder='1 Person']").value || "1 Person";
+              const date = form.querySelector("input[type='date']").value || "Date";
+              const time = form.querySelector("input[type='time']").value || "Time";
+
+              // Creating a random confirmation code
+              const confirmationCode = "HRP" + Math.random().toString(36).substr(2, 8).toUpperCase();
+
+              // Replacing the content with the confirmation screen
+              container.innerHTML = `
+                  <div class="confirmationContainer">
+                      <div class="confirmationMessageBox">
+                          <img src="../images/check.png" alt="Check Icon" width="90">
+                          <h3 class="confirmText">Confirmed!</h3>
+                          <p class="confirmText">#${confirmationCode}</p>
+                          <p class="confirmText">Thank you for booking ${name}.</p>
+                          <p class="confirmText">Your table for ${person} at ${time} on ${date} IS CONFIRMED.</p>
+                          <p class="confirmText">See you soon!</p>
+                          <button id="reserveAgainBtn" class="reserveAgainBtn">Reserve Again</button>
+                      </div>
+                  </div>
+              `;
+
+              // Re-attach event listener to "Reserve Again" button
+              document.getElementById("reserveAgainBtn").addEventListener("click", function () {
+                  location.reload(); // Reload the page to reset the form
+              });
+          });
+      });
+    </script>
   </body>
 </html>

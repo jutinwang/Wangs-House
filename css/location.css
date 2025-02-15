@@ -21,26 +21,13 @@ body {
 .navbar-brand {
     font-family: "Inknut Antiqua";
 }
-.reservation-btn {
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: white;
-    padding: 8px 15px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.reservation-btn:hover {
-    background-color: white;
-    color: black;
-}
 
 /* Layout Container */
 .locationContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     padding: 0 10%;
 }
 

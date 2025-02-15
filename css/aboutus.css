@@ -22,20 +22,6 @@ body {
     font-family: "Inknut Antiqua";
 }
 
-.reservation-btn {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.reservation-btn:hover {
-    background: white;
-    color: black;
-}
-
 .title-wrapper {
     display: flex;
     align-items: center;

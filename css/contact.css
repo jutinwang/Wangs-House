@@ -22,7 +22,6 @@ body {
     font-family: "Inknut Antiqua";
 }
 
-/* Contact Box Container */
 .contactContainer {
     display: flex;
     justify-content: center;
@@ -30,7 +29,6 @@ body {
     height: 100vh;
 }
 
-/* Contact Box */
 .contactBox {
     background-color: black;
     color: white;
@@ -61,14 +59,12 @@ body {
     background-color: #FFEA00;
 }
 
-/* Title */
 .title {
     font-size: 32px;
     font-weight: bold;
     font-family: "Inknut Antiqua";
 }
 
-/* Phone */
 .phone {
     font-size: 18px;
     font-weight: bold;
@@ -78,14 +74,12 @@ body {
     margin-right: 5px;
 }
 
-/* Subtitle */
 .subtitle {
     font-size: 20px;
     font-weight: bold;
     font-family: "Inknut Antiqua";
 }
 
-/* Form */
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -93,14 +87,12 @@ body {
     align-items: center;
 }
 
-/* Input Row */
 .inputRow {
     display: flex;
     gap: 10px;
     width: 100%;
 }
 
-/* Input Fields */
 .inputField {
     flex: 1;
     padding: 10px;
@@ -111,7 +103,6 @@ body {
     width: 100%;
 }
 
-/* Message Field */
 .messageField {
     width: 100%;
     height: 120px;
@@ -123,7 +114,6 @@ body {
     resize: none;
 }
 
-/* Submit Button */
 .submitBtn {
     background-color: #FFEA00;
     color: black;

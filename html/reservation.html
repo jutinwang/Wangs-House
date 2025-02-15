@@ -54,7 +54,8 @@
         </form>
       </div>
     </div>
-
+    
+    <!-- Script for Confirmation Screen -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
           const form = document.querySelector(".reservationForm");
@@ -63,16 +64,13 @@
           form.addEventListener("submit", function (event) {
               event.preventDefault();
 
-              // Collecting form values
               const name = form.querySelector("input[placeholder='Name']").value || "Name";
               const person = form.querySelector("input[placeholder='1 Person']").value || "1 Person";
               const date = form.querySelector("input[type='date']").value || "Date";
               const time = form.querySelector("input[type='time']").value || "Time";
 
-              // Creating a random confirmation code
               const confirmationCode = "HRP" + Math.random().toString(36).substr(2, 8).toUpperCase();
 
-              // Replacing the content with the confirmation screen
               container.innerHTML = `
                   <div class="confirmationContainer">
                       <div class="confirmationMessageBox">
@@ -87,9 +85,8 @@
                   </div>
               `;
 
-              // Re-attach event listener to "Reserve Again" button
               document.getElementById("reserveAgainBtn").addEventListener("click", function () {
-                  location.reload(); // Reload the page to reset the form
+                  location.reload();
               });
           });
       });

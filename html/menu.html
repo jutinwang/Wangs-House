@@ -40,7 +40,6 @@
           </div>
             <div class="menuSection">
                 <div class="menuHeader">
-                    <!-- Use the onclick attribute to call switchMenu directly -->
                     <button id="lunchM" class="mealTime" onclick="switchMenu('lunch')">
                         <img src="../images/restaurant.png" alt="Lunch Icon">
                         <div class="clickable">
@@ -84,6 +83,7 @@
         </div>
     </div>
 
+    <!-- Script for Switching Menu -->
     <script>
       function switchMenu(menuType) {
         const lunchMenu = document.getElementById('lunchMenu');
